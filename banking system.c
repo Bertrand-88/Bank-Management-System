@@ -21,7 +21,7 @@ void createAccount() {
     printf("Enter Initial Deposit Amount: ");
     scanf("%f", &acc.balance);
 
-    // Check if account number already exists
+    
     fp = fopen("accounts.dat", "rb");
     if (fp != NULL) {
         struct Account temp;
