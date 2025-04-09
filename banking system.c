@@ -21,7 +21,6 @@ void createAccount() {
     printf("Enter Initial Deposit Amount: ");
     scanf("%f", &acc.balance);
 
-    
     fp = fopen("accounts.dat", "rb");
     if (fp != NULL) {
         struct Account temp;
@@ -35,7 +34,6 @@ void createAccount() {
         fclose(fp);
     }
 
-    // Append account to file
     fp = fopen("accounts.dat", "ab");
     if (fp == NULL) {
         printf("Error opening file!\n");
